@@ -26,24 +26,29 @@
                     <a>
                         <img width="40" height="40" src="./img/duck.png" alt="">
                     </a>
-                    <a class="text-light text-decoration-none">Catalogo libri</a>
-                    <a class="text-secondary text-decoration-none">Anagrafica Utenti</a>
-                    <a class="text-secondary text-decoration-none">Storico Prestiti</a>
-                    <a class="text-secondary text-decoration-none">Help</a>
+                    <div class="d-none d-lg-block">
+                        <a class="text-light text-decoration-none  mx-1">Catalogo libri</a>
+                        <a class="text-secondary text-decoration-none  mx-1">Anagrafica Utenti</a>
+                        <a class="text-secondary text-decoration-none  mx-1">Storico Prestiti</a>
+                        <a class="text-secondary text-decoration-none  mx-1">Help</a>
+                    </div>
                 </div>
 
                 <!-- barra di ricerca -->
-                <form class="d-flex gap-3">
-                    <input type="text" class="rounded border-0 form-control px-2" placeholder="Cerca...">
-                    <button type="button" class="btn btn-dark btn-outline-light px-3 py-1">Cerca</button>
+                <form class="gap-3 d-none d-lg-flex">
+                        <input type="text" class=" border-0 rounded form-control px-2" placeholder="Cerca...">
+                        <button type="button" class="btn btn-dark btn-outline-light px-3 py-1">Cerca</button>
                 </form>
+                <div class="d-lg-none d-md-block border border-secondary px-2 rounded fs-3 text-secondary">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
         </nav>
     </header>
 
     <main class="container text-center">
         <div class="row my-4">
-            <div class="col-8">
+            <div class="col-12 col-lg-8">
                 <div class="d-flex align-items-center -justify-content-center justify-content-between">
                     <h3>Catalogo Libri</h3>
                     <button type="button" class="btn btn-primary btn-outline-light px-3 py-1">Aggiungi Libro</button>
@@ -174,7 +179,7 @@
                 <!-- todo-FAQ -->
             </div>
 
-            <div class="col-4">
+            <div class="col-12 col-lg-4 ">
                 <!--  -->
                 <div class="card mb-4">
                     <div class="card-header text-start">
@@ -183,20 +188,20 @@
                     <div class="p-3 text-start">
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item border"> <input class="form-check-input" type="checkbox" value=""
-                                    id="checkIndeterminate">
-                                <label class="form-check-label" for="checkIndeterminate">
+                                    id="checkChiamare">
+                                <label class="form-check-label" for="checkChiamare">
                                     Chiamare segreteria
                                 </label>
                             </li>
                             <li class="list-group-item border"> <input class="form-check-input" type="checkbox" value=""
-                                    id="checkIndeterminate">
-                                <label class="form-check-label" for="checkIndeterminate">
+                                    id="checkMandare">
+                                <label class="form-check-label" for="checkMandare">
                                     Mandare avvisi prestiti scaduti
                                 </label>
                             </li>
                             <li class="list-group-item border"> <input class="form-check-input" type="checkbox" value=""
-                                    id="checkIndeterminate">
-                                <label class="form-check-label" for="checkIndeterminate">
+                                    id="checkOrdina">
+                                <label class="form-check-label" for="checkOrdina">
                                     Ordina nuovi libri
                                 </label>
                             </li>
@@ -204,44 +209,77 @@
                     </div>
                 </div>
 
-                <div class="text-start border border-secondary-subtle px-2 bg-body-secondary">
-                    <h3>F.A.Q.</h3>
+                <div class="card">
+                    <div class="card-header text-start">
+                        <h2>F.A.Q.</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Come Aggiungere un nuovo libro
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item’s accordion body.</strong> It is shown by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It’s also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Come posso accedere all'anagrafica utenti?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item’s accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It’s also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Posso usare questa dashboard da mobile?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item’s accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It’s also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="container text-start p-4 d-flex flex-column gap-3 border border-secondary-subtle">
-                    <div class="dropdown">
-                        <button class="btn dropdown-toggle border-bottom" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Come Aggiungere un nuovo libro
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown">
-                        <button class="btn dropdown-toggle border-bottom" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Come posso accedere all'anagrafica utenti?
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown">
-                        <button class="btn dropdown-toggle border-bottom" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Posso usare questa dashboard da mobile?
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                </div>
+
             </div>
         </div>
 
@@ -253,7 +291,3 @@
 </body>
 
 </html>
-
-
-
-<!--  -->
