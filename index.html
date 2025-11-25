@@ -15,28 +15,24 @@
 
     <header class="p-3 bg-dark text-white">
         <!-- navbar -->
-        <nav class="">
+        <nav>
             <div class="d-flex align-items-center -justify-content-center justify-content-between">
                 <div class="d-flex align-items-center gap-3">
                     <!-- nav-links -->
                     <a>
-                        <img width="40" height="35" src="./img/duck.png" alt="">
+                        <img width="40" height="40" src="./img/duck.png" alt="">
                     </a>
-                    <a>Catalogo libri</a>
-                    <a>Anagrafica Utenti</a>
-                    <a>Storico Prestiti</a>
-                    <a>Help</a>
+                    <a class="text-light text-decoration-none">Catalogo libri</a>
+                    <a class="text-secondary text-decoration-none">Anagrafica Utenti</a>
+                    <a class="text-secondary text-decoration-none">Storico Prestiti</a>
+                    <a class="text-secondary text-decoration-none">Help</a>
                 </div>
 
-                <div class="d-flex gap-3">
-                    <!-- barra di ricerca -->
-                    <form action="">
-                        <input type="text">
-                    </form>
-                    <div>
-                        <button>Cerca</button>
-                    </div>
-                </div>
+                <!-- barra di ricerca -->
+                <form class="d-flex gap-3">
+                    <input type="text" class="rounded border-0 form-control px-2" placeholder="Cerca...">
+                    <button type="button" class="btn btn-dark btn-outline-light px-3 py-1">Cerca</button>
+                </form>
             </div>
         </nav>
     </header>
