@@ -42,15 +42,15 @@
     </header>
 
     <main class="container text-center">
-        <div class="row gx-0 my-4">
-            <div class="col">
+        <div class="row my-4">
+            <div class="col-8">
                 <div class="d-flex align-items-center -justify-content-center justify-content-between">
                     <h3>Catalogo Libri</h3>
                     <button type="button" class="btn btn-primary btn-outline-light px-3 py-1">Aggiungi Libro</button>
                 </div>
 
                 <!-- tabella -->
-                <table class="table table-striped col-8 text-start">
+                <table class="table table-striped text-start">
                     <thead>
                         <tr>
                             <th scope="col">Titolo</th>
@@ -63,14 +63,15 @@
                         <tr>
                             <td class="col-6">I pianti della terra</td>
                             <td class="col-2">-</td>
-                            <td class="col-3"><span class="text-light bg-success px-1 rounded">Disponibile</span></td>
+                            <td class="col-3"><span class="text-light bg-success px-1 rounded">Disponibile</span>
+                            </td>
                             <td class="col-1">
                                 <i class="fa-solid fa-pen"></i>
                                 <i class="fa-solid fa-trash"></i>
                             </td>
                         </tr>
-                                                <tr>
-                            <td>I pianti della terra</td>
+                        <tr>
+                            <td>I promessi sposi</td>
                             <td>-</td>
                             <td><span class="text-light bg-success px-1 rounded">Disponibile</span></td>
                             <td>
@@ -78,8 +79,8 @@
                                 <i class="fa-solid fa-trash"></i>
                             </td>
                         </tr>
-                                                <tr>
-                            <td>I pianti della terra</td>
+                        <tr>
+                            <td>Il signore degli anelli</td>
                             <td>-</td>
                             <td><span class="text-light bg-success px-1 rounded">Disponibile</span></td>
                             <td>
@@ -87,8 +88,8 @@
                                 <i class="fa-solid fa-trash"></i>
                             </td>
                         </tr>
-                                                <tr>
-                            <td>I pianti della terra</td>
+                        <tr>
+                            <td>Harry Potter e la pietra filosofale</td>
                             <td>18/10/2023</td>
                             <td><span class="text-light bg-warning px-1 rounded">In prestito</span></td>
                             <td>
@@ -96,8 +97,8 @@
                                 <i class="fa-solid fa-trash"></i>
                             </td>
                         </tr>
-                                                <tr>
-                            <td>I pianti della terra</td>
+                        <tr>
+                            <td>Il codice Da Vinci</td>
                             <td>-</td>
                             <td><span class="text-light bg-success px-1 rounded">Disponibile</span></td>
                             <td>
@@ -105,8 +106,8 @@
                                 <i class="fa-solid fa-trash"></i>
                             </td>
                         </tr>
-                                                <tr>
-                            <td>I pianti della terra</td>
+                        <tr>
+                            <td>Shining</td>
                             <td>-</td>
                             <td><span class="text-light bg-danger px-1 rounded">Non disponibile</span></td>
                             <td>
@@ -114,8 +115,8 @@
                                 <i class="fa-solid fa-trash"></i>
                             </td>
                         </tr>
-                                                <tr>
-                            <td>I pianti della terra</td>
+                        <tr>
+                            <td>La divina commedia</td>
                             <td>-</td>
                             <td><span class="text-light bg-success px-1 rounded">Disponibile</span></td>
                             <td>
@@ -123,8 +124,8 @@
                                 <i class="fa-solid fa-trash"></i>
                             </td>
                         </tr>
-                                                <tr>
-                            <td>I pianti della terra</td>
+                        <tr>
+                            <td>Il trono di spade</td>
                             <td>21/09/2023</td>
                             <td><span class="text-light bg-warning px-1 rounded">In prestito</span></td>
                             <td>
@@ -132,8 +133,8 @@
                                 <i class="fa-solid fa-trash"></i>
                             </td>
                         </tr>
-                                                <tr>
-                            <td>I pianti della terra</td>
+                        <tr>
+                            <td>Il mondo di Sofia</td>
                             <td>-</td>
                             <td><span class="text-light bg-success px-1 rounded">Disponibile</span></td>
                             <td>
@@ -141,8 +142,8 @@
                                 <i class="fa-solid fa-trash"></i>
                             </td>
                         </tr>
-                                                <tr>
-                            <td>I pianti della terra</td>
+                        <tr>
+                            <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
                             <td>-</td>
                             <td><span class="text-light bg-danger px-1 rounded">Disponibile</span></td>
                             <td>
@@ -150,8 +151,8 @@
                                 <i class="fa-solid fa-trash"></i>
                             </td>
                         </tr>
-                                                <tr>
-                            <td>I pianti della terra</td>
+                        <tr>
+                            <td>Il piccolo principe</td>
                             <td>25/07/2023</td>
                             <td><span class="text-light bg-warning px-1 rounded">In prestito</span></td>
                             <td>
@@ -159,8 +160,8 @@
                                 <i class="fa-solid fa-trash"></i>
                             </td>
                         </tr>
-                                                <tr>
-                            <td>I pianti della terra</td>
+                        <tr>
+                            <td>La storia infinita</td>
                             <td>-</td>
                             <td><span class="text-light bg-success px-1 rounded">Disponibile</span></td>
                             <td>
@@ -170,20 +171,59 @@
                         </tr>
                     </tbody>
                 </table>
-
                 <!-- todo-FAQ -->
             </div>
 
             <div class="col-4">
-
-                <div class="col">
+                <div class="text-start border border-secondary-subtle px-2 bg-body-secondary">
                     <h3>Todo</h3>
                 </div>
-
-                <div class="col">
+                <div class="p-4">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="checkIndeterminate">
+                        <label class="form-check-label" for="checkIndeterminate">
+                            Indeterminate checkbox
+                        </label>
+                    </div>
+                </div>
+                <div class="text-start border border-secondary-subtle px-2 bg-body-secondary">
                     <h3>F.A.Q.</h3>
                 </div>
-
+                <div class="container text-start p-4 d-flex flex-column gap-3 border border-secondary-subtle">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle border-bottom" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Come Aggiungere un nuovo libro
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle border-bottom" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Come posso accedere all'anagrafica utenti?
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle border-bottom" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Posso usare questa dashboard da mobile?
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -195,59 +235,3 @@
 </body>
 
 </html>
-
-
-
-
-
-<!--                 <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Titolo</th>
-                            <th scope="col">Data Prestito</th>
-                            <th scope="col">Stato</th>
-                            <th scope="col">Azzioni</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">I pianti della terra</th>
-                            <td>Ipromessi sposi</td>
-                            <td>Ilsignore degli anelli</td>
-                            <td>Harry Potter e la pietra filosofale</td>
-                            <td>Il codice Da Vinci</td>
-                            <td>Shining</td>
-                            <td>La divina commedia</td>
-                            <td>Il trono di spade</td>
-                            <td>Il mondo di Sofia</td>
-                            <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
-                            <td>Il piccolo principe</td>
-                        </tr>
-                        <tr>
-                            <th scope="row"></th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>John</td>
-                            <td>Doe</td>
-                            <td>@social</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table> -->
