@@ -19,30 +19,37 @@
 
 <body>
 
-    <header class="p-3 bg-dark text-white">
+    <header>
         <!-- navbar -->
-        <nav class="small">
-            <div class="d-flex align-items-center -justify-content-center justify-content-between">
-                <div class="d-flex align-items-center gap-3">
-                    <!-- nav-links -->
-                    <a>
-                        <img width="40" height="40" src="./img/duck.png" alt="">
-                    </a>
-                    <div class="d-none d-lg-block">
-                        <a class="text-light text-decoration-none mx-1">Catalogo libri</a>
-                        <a class="text-secondary text-decoration-none mx-1">Anagrafica Utenti</a>
-                        <a class="text-secondary text-decoration-none mx-1">Storico Prestiti</a>
-                        <a class="text-secondary text-decoration-none mx-1">Help</a>
-                    </div>
-                </div>
-
-                <!-- barra di ricerca -->
-                <form class="gap-3 d-none d-lg-flex">
-                    <input type="text" class=" border-0 rounded form-control px-2" placeholder="Cerca...">
-                    <button type="button" class="btn btn-dark btn-outline-light px-3 py-1">Cerca</button>
-                </form>
-                <div class="d-lg-none d-md-block border border-secondary px-2 rounded fs-3 text-secondary">
-                    <i class="fa-solid fa-bars"></i>
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/duck.png" alt="Bootstrap" width="40" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Anagrafica Utenti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Storico Prestiti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true">Help</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 bg-light" type="search" placeholder="Cerca..." aria-label="Search" data-bs-theme="light" />
+                        <button class="btn btn-outline-light" type="submit">Cerca</button>
+                    </form>
                 </div>
             </div>
         </nav>
